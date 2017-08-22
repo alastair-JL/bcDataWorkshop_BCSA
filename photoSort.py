@@ -45,7 +45,11 @@ def sort_image(photoLink, hazardRating):
             
     
     # Now we download the image into the appropriate folder
-    target = './'+category
+    target = './'+category+'/'
+    
+    print('hazard rating of image: '+ category +'\n')
+    print('downloaded to: '+ target)
+    
     download_image(image_path,target)
     
     return 0
