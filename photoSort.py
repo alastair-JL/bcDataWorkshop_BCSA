@@ -3,10 +3,11 @@
 
 
 # This function will take a photolink, and extract the address of the photo
-def extract_address():
+def extract_address(photoLink):
+
+    address=photoLink.split('/')[-2]+'/'+photoLink.split('/')[-1]
     
-  
-    return 0
+    return address
 
 
 
