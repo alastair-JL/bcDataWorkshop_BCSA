@@ -1,0 +1,5 @@
+All these files are pretty much a copy paste from:
+https://github.com/fastai/courses/blob/master/deeplearning1/nbs 
+
+In our presentation it is important that we recognise that (if we use these files).
+
