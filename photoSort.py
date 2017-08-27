@@ -24,7 +24,7 @@ def download_image(path,target):
     #fileName = './tmp/'+path.split('/')[1]
     fileName = target+path.split('/')[1]
     
-    print(fileName)
+    #(fileName)
    # s3_anon.download_file(Bucket='bcsa-data', Key=key, Filename='./tmp/temp.png')
     s3_anon.download_file(Bucket='bcsa-data', Key=key, Filename=fileName)
     return 0
@@ -38,7 +38,7 @@ def download_image_as_tmp(path):
     
     key='Photos/UBC Image Data/docs/'+path
     
-    print(path)
+    #print(path)
     s3_anon.download_file(Bucket='bcsa-data', Key=key, Filename='./tmp/temp.png')
     #s3_anon.download_file(Bucket='bcsa-data', Key=key, Filename=fileName)
     return 0
@@ -61,8 +61,8 @@ def sort_image(photoLink, hazardRating):
     # Now we download the image into the appropriate folder
     target = './'+category+'/'
     
-    print('hazard rating of image: '+ category +'\n')
-    print('downloaded to: '+ './tmp/temp.png')
+    #print('hazard rating of image: '+ category +'\n')
+    #print('downloaded to: '+ './tmp/temp.png')
     
     download_image(image_path,target)
     
@@ -85,7 +85,7 @@ def download_image_into_tmp(photoLink, hazardRating):
     # Now we download the image into the appropriate folder
     target = './'+category+'/'
     
-    print('hazard rating of image: '+ category +'\n')
+    #print('hazard rating of image: '+ category +'\n')
 
     download_image_as_tmp(image_path)
     
